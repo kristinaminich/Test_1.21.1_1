@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "test_1_21_1",
+  "version": "${version}",
+  "name": "Test 1.21.1",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/test_1_21_1/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "Felix.test_1_21_1.client.Test_1_21_1Client"
+    ],
+    "main": [
+      "Felix.test_1_21_1.Test_1_21_1"
+    ]
+  },
+  "mixins": [
+    "test_1_21_1.mixins.json",
+    {
+      "config": "test_1_21_1.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

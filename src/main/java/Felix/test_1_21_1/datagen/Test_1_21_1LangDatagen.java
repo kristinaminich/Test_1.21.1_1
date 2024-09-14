@@ -10,8 +10,8 @@ import java.util.concurrent.CompletableFuture;
 public class Test_1_21_1LangDatagen extends FabricLanguageProvider {
 
 
-    protected Test_1_21_1LangDatagen(FabricDataOutput dataOutput, String languageCode, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
-        super(dataOutput, languageCode, registryLookup);
+    protected Test_1_21_1LangDatagen(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+        super(dataOutput, registryLookup);
     }
 
     @Override

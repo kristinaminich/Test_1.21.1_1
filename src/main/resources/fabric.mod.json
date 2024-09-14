@@ -10,6 +10,9 @@
   "icon": "assets/test_1_21_1/icon.png",
   "environment": "*",
   "entrypoints": {
+    "fabric-datagen": [
+      "Felix.test_1_21_1.datagen.Test_1_21_1Datagen"
+    ],
     "client": [
       "Felix.test_1_21_1.client.Test_1_21_1Client"
     ],

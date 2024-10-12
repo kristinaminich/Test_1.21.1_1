@@ -1,5 +1,6 @@
-// 1.21.1	2024-10-12T14:55:10.621363558	test_1.21.1/Model Definitions
+// 1.21.1	2024-10-12T16:35:35.190819834	test_1.21.1/Model Definitions
 c3bcf18034a67a00ecd06823d17997ee4940ad71 assets/test/models/item/raw_vibranium.json
+f2b7b6824d61bff65ba129cd68041a494ff4ac94 assets/test/models/block/vibranium_ore_block.json
 76c5ca13ed6d8768eee355a6a14f0b25fc28f394 assets/test/models/item/burger.json
-31debbb8218a2791bbf344d7cf6698203eeedf7f assets/test/models/block/vibranium_ore.json
-d566438b72fd63b19a57d8afe652f51c2d1a7766 assets/test/blockstates/vibranium_ore.json
+50f2a83eb7e9a8f9afd651da05b5f3c5e6261f1f assets/test/blockstates/vibranium_ore_block.json
+d526b2d38d5efa000c06901b57008c3b4ffeb50f assets/test/models/item/vibranium_ore_block.json

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "test:block/vibranium_ore"
+    "all": "test:block/vibranium_ore_block"
   }
 }

@@ -19,7 +19,7 @@ public class Test_1_21_1 implements ModInitializer {
     @Override
     public void onInitialize() {
         registryHelper.registerItem(new Item(new Item.Settings().food(ModFoodComponents.BURGER_ITEM)),"burger", "Burger");
-        registryHelper.registerBlockAndItem(VIBRANIUM_ORE_BLOCK, "vibranium_ore", "Vibranium Ore");
+        registryHelper.registerBlockAndItem(VIBRANIUM_ORE_BLOCK, "vibranium_ore_block", "Vibranium Ore");
         registryHelper.registerItem(RAW_VIBRAIUM_ITEM,"raw_vibranium", "raw vibranium");
     }
 }

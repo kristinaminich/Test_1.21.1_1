@@ -1,15 +1,12 @@
 package felix.test;
 
 import felix.test.Item.ModFoodComponents;
-import felix.test.Item.Shield;
 import felix.test.registry.RegistryHelper;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.item.ShieldItem;
-import net.minecraft.registry.Registry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

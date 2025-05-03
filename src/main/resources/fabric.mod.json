@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "test_1_21_1",
+  "id": "test",
   "version": "${version}",
   "name": "test_1.21.1",
   "description": "",
@@ -11,13 +11,13 @@
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "Felix.test_1_21_1.datagen.Test_1_21_1Datagen"
+      "felix.test.datagen.Test_1_21_1Datagen"
     ],
     "client": [
-      "Felix.test_1_21_1.client.Test_1_21_1Client"
+      "felix.test.TestClient"
     ],
     "main": [
-      "Felix.test_1_21_1.Test_1_21_1"
+      "felix.test.Test"
     ]
   },
   "mixins": [

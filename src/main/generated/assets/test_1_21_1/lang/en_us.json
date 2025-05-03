@@ -1,5 +1,6 @@
 {
   "block.test.vibranium_ore_block": "Vibranium Ore",
   "item.test.burger": "Burger",
-  "item.test.raw_vibranium": "raw vibranium"
+  "item.test.raw_vibranium": "raw vibranium",
+  "item.test.shield": "Shield"
 }

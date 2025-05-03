@@ -1,7 +1,6 @@
-package Felix.test_1_21_1.datagen;
+package felix.test.datagen;
 
 import Felix.test_1_21_1.Test_1_21_1;
-import com.ibm.icu.text.Normalizer2;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;

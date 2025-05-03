@@ -1,4 +1,4 @@
-package Felix.test_1_21_1.datagen;
+package felix.test.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

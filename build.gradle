@@ -37,6 +37,10 @@ dependencies {
 
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    modImplementation "com.github.CrimsonDawn45:Fabric-Shield-Lib:v${project.fabric_shield_lib_version}"
+    modImplementation "com.terraformersmc:modmenu:${project.mod_menu_version}"
+    modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
+    modImplementation "com.github.Chocohead:Fabric-ASM:v${project.fabricasm_version}"
 }
 
 processResources {
@@ -44,6 +48,8 @@ processResources {
     inputs.property "minecraft_version", project.minecraft_version
     inputs.property "loader_version", project.loader_version
     filteringCharset "UTF-8"
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 
     filesMatching("fabric.mod.json") {
         expand "version": project.version,

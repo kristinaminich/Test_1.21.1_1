@@ -1,4 +1,4 @@
-package Felix.test_1_21_1.registry;
+package felix.test.registry;
 
 import Felix.test_1_21_1.Test_1_21_1;
 import net.minecraft.block.Block;

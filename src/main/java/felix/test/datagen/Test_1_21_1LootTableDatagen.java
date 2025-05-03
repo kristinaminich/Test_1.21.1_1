@@ -1,4 +1,4 @@
-package Felix.test_1_21_1.datagen;
+package felix.test.datagen;
 
 public class Test_1_21_1LootTableDatagen {
 }

@@ -1,4 +1,4 @@
-package Felix.test_1_21_1.Item;
+package felix.test.Item;
 
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;

@@ -1,6 +1,5 @@
 package felix.test.registry;
 
-import Felix.test_1_21_1.Test_1_21_1;
 import felix.test.Test;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;

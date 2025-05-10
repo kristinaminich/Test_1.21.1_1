@@ -1,6 +1,8 @@
 {
   "block.test.vibranium_ore_block": "Vibranium Ore",
   "item.test.burger": "Burger",
+  "item.test.quadratite_ingot": "Quadratite Ingot",
+  "item.test.quadratite_sword": "Quadratite Sword",
   "item.test.raw_vibranium": "raw vibranium",
   "item.test.shield": "Shield"
 }

@@ -32,5 +32,6 @@ public class Test implements ModInitializer {
         registryHelper.registerItem(RAW_VIBRAIUM_ITEM, "raw_vibranium", "raw vibranium");
         registryHelper.registerItem(SHIELD, "shield", "Shield");
         registryHelper.registerItem(QUADRITITE_SWORD, "quadratite_sword", "Quadratite Sword");
+        registryHelper.registerItem(QUADRATITE_INGOT, "quadratite_ingot", "Quadratite Ingot");
     }
 }

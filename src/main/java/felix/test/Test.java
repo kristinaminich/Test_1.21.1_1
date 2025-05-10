@@ -7,6 +7,8 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ShieldItem;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolMaterial;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,7 +19,14 @@ public class Test implements ModInitializer {
     public static final Block VIBRANIUM_ORE_BLOCK = new Block(AbstractBlock.Settings.create());
     public static final Item RAW_VIBRAIUM_ITEM = new Item(new Item.Settings());
     public static final Item SHIELD = new ShieldItem(new Item.Settings().maxDamage(2500));
-
+    public static final ToolMaterial QUADRATITE_TOOL_MATERIAL = new ToolMaterial(
+            16,
+            20.0F,
+            0.0F,
+            15,
+            QuadritieArmorMaterial.REPAIRS_GUIDITE_ARMOR
+    );
+    public static final Item QUADRITITE_SWORD = new SwordItem((QUADRATITE_TOOL_MATERIAL, 6f, 1.6f), new Item.Settings());
     @Override
     public void onInitialize() {
         registryHelper.registerItem(new Item(new Item.Settings().food(ModFoodComponents.BURGER_ITEM)), "burger", "Burger");

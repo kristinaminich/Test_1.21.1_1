@@ -40,9 +40,9 @@ public class Test implements ModInitializer {
         registryHelper.registerItem(SHIELD, "shield", "Shield");
         registryHelper.registerItem(QUADRITITE_SWORD, "quadratite_sword", "Quadratite Sword");
         registryHelper.registerItem(QUADRATITE_INGOT, "quadratite_ingot", "Quadratite Ingot");
-        registryHelper.registerItem(QUADRATITE_HELMET, "quadratite_helmet", "Quadratite Helmet");
-        registryHelper.registerItem(QUADRATITE_CHESTPLATE, "quadratite_chestplate", "Quadratite Chestplate");
-        registryHelper.registerItem(QUADRATITE_LEGGINS, "quadratite_leggins", "Quadratite Leggins");
-        registryHelper.registerItem(QUADRATITE_BOOTS, "quadratite_boots", "Quadratite Boots");
+        registryHelper.registerArmorItem(QUADRATITE_HELMET, "quadratite_helmet", "Quadratite Helmet");
+        registryHelper.registerArmorItem(QUADRATITE_CHESTPLATE, "quadratite_chestplate", "Quadratite Chestplate");
+        registryHelper.registerArmorItem(QUADRATITE_LEGGINS, "quadratite_leggins", "Quadratite Leggins");
+        registryHelper.registerArmorItem(QUADRATITE_BOOTS, "quadratite_boots", "Quadratite Boots");
     }
 }

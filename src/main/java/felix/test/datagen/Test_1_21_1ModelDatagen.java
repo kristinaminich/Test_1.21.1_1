@@ -31,9 +31,8 @@ public class Test_1_21_1ModelDatagen extends FabricModelProvider {
         Test.registryHelper.registeredBlockItems.forEach(bi -> {
             itemModelGenerator.register(bi.item(),Models.GENERATED);
         });
-        itemModelGenerator.registerArmor(((ArmorItem) Test.QUADRATITE_HELMET));
-        itemModelGenerator.registerArmor(((ArmorItem) Test.QUADRATITE_CHESTPLATE));
-        itemModelGenerator.registerArmor(((ArmorItem) Test.QUADRATITE_LEGGINS));
-        itemModelGenerator.registerArmor(((ArmorItem) Test.QUADRATITE_BOOTS));
+        Test.registryHelper.registeredArmorItems.forEach(i -> {
+            itemModelGenerator.register(i.item(), Models.GENERATED_TWO_LAYERS);
+        });
     }
 }

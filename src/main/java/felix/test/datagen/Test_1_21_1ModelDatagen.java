@@ -32,7 +32,7 @@ public class Test_1_21_1ModelDatagen extends FabricModelProvider {
             itemModelGenerator.register(bi.item(),Models.GENERATED);
         });
         Test.registryHelper.registeredArmorItems.forEach(i -> {
-            itemModelGenerator.register(i.item(), Models.GENERATED_TWO_LAYERS);
+            itemModelGenerator.register(i.item(), Models.GENERATED);
         });
     }
 }

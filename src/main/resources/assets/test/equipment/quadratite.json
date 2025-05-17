@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "test:quadratite"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "test:quadratite2"
+      }
+    ]
+  }
+}

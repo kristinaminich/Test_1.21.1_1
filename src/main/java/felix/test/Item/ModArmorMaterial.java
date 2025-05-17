@@ -17,15 +17,15 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterial {;
     private static Object ModItems;
-    public static final RegistryEntry<ArmorMaterial> PINK_GARNET_ARMOR_MATERIAL = registerArmorMaterial("quadratite",
+    public static final RegistryEntry<ArmorMaterial> QUADRATITE_ARMOR_MATERIAL = registerArmorMaterial("quadratite",
             () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                map.put(ArmorItem.Type.BOOTS, 2);
-                map.put(ArmorItem.Type.LEGGINGS, 4);
-                map.put(ArmorItem.Type.CHESTPLATE, 6);
-                map.put(ArmorItem.Type.HELMET, 2);
-                map.put(ArmorItem.Type.BODY, 4);
-            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(Test.QUADRATITE_INGOT),
-                    List.of(new ArmorMaterial.Layer(Identifier.of(Test.MODID, "quadratite"))), 0,0));
+                map.put(ArmorItem.Type.BOOTS, 1);
+                map.put(ArmorItem.Type.LEGGINGS, 2);
+                map.put(ArmorItem.Type.CHESTPLATE, 3);
+                map.put(ArmorItem.Type.HELMET, 1);
+                map.put(ArmorItem.Type.BODY, 2);
+            }), 50, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(Test.QUADRATITE_INGOT),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(Test.MODID, "quadratite"))), 20,20));
 
 
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {

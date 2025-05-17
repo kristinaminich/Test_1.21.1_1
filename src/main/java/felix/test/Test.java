@@ -1,5 +1,6 @@
 package felix.test;
 
+import felix.test.Item.ModArmorMaterial;
 import felix.test.Item.ModFoodComponents;
 import felix.test.Item.ModToolMaterial;
 import felix.test.registry.RegistryHelper;
@@ -25,6 +26,12 @@ public class Test implements ModInitializer {
     public static final Item SHIELD = new ShieldItem(new Item.Settings().maxDamage(2500));
     public static final Item QUADRATITE_INGOT = new Item(new Item.Settings());
     public static final Item QUADRITITE_SWORD = new SwordItem(ModToolMaterial.QUADRATITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterial.QUADRATITE, 30, -6f)));
+    public static final Item QUADRATITE_HELMET = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(3)));
+    public static final Item QUADRATITE_CHESTPLATE = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(3)));
+    public static final Item QUADRATITE_LEGGINS = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(3)));
+    public static final Item QUADRATITE_BOOTS = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(3)));
+
+
     @Override
     public void onInitialize() {
         registryHelper.registerItem(new Item(new Item.Settings().food(ModFoodComponents.BURGER_ITEM)), "burger", "Burger");
@@ -33,5 +40,9 @@ public class Test implements ModInitializer {
         registryHelper.registerItem(SHIELD, "shield", "Shield");
         registryHelper.registerItem(QUADRITITE_SWORD, "quadratite_sword", "Quadratite Sword");
         registryHelper.registerItem(QUADRATITE_INGOT, "quadratite_ingot", "Quadratite Ingot");
+        registryHelper.registerItem(QUADRATITE_HELMET, "quadratite_helmet", "Quadratite Helmet");
+        registryHelper.registerItem(QUADRATITE_CHESTPLATE, "quadratite_chestplate", "Quadratite Chestplate");
+        registryHelper.registerItem(QUADRATITE_LEGGINS, "quadratite_leggins", "Quadratite Leggins");
+        registryHelper.registerItem(QUADRATITE_BOOTS, "quadratite_boots", "Quadratite Boots");
     }
 }

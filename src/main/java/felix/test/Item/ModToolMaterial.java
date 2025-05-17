@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 import static net.minecraft.registry.tag.BlockTags.INCORRECT_FOR_NETHERITE_TOOL;
 
-public enum ModToolMaterials implements ToolMaterial {
+public enum ModToolMaterial implements ToolMaterial {
     QUADRATITE(INCORRECT_FOR_NETHERITE_TOOL,
             16, 20.0F, 20.0F, 17, () -> Ingredient.ofItems(Test.QUADRATITE_INGOT));
 
@@ -22,7 +22,7 @@ public enum ModToolMaterials implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    ModToolMaterials(final TagKey<Block> inverseTag, final int itemDurability,final float miningSpeed,
+    ModToolMaterial(final TagKey<Block> inverseTag, final int itemDurability,final float miningSpeed,
                      final float attackDamage, final int enchantability,final Supplier<Ingredient> repairIngredient) {
         this.inverseTag = inverseTag;
         this.itemDurability = itemDurability;

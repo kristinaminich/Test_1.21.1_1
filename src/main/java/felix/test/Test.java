@@ -1,8 +1,10 @@
 package felix.test;
 
 import felix.test.Item.ModFoodComponents;
+import felix.test.Item.ModToolMaterial;
 import felix.test.registry.RegistryHelper;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.*;
@@ -11,10 +13,8 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.util.Map;
-
-import static felix.test.Item.ModToolMaterials.QUADRATITE;
+import static felix.test.Item.ModToolMaterial.QUADRATITE;
 
 public class Test implements ModInitializer {
     public static final String MODID = "test";
@@ -24,7 +24,7 @@ public class Test implements ModInitializer {
     public static final Item RAW_VIBRAIUM_ITEM = new Item(new Item.Settings());
     public static final Item SHIELD = new ShieldItem(new Item.Settings().maxDamage(2500));
     public static final Item QUADRATITE_INGOT = new Item(new Item.Settings());
-    public static final Item QUADRITITE_SWORD = new SwordItem(QUADRATITE, new Item.Settings());
+    public static final Item QUADRITITE_SWORD = new SwordItem(ModToolMaterial.QUADRATITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterial.QUADRATITE, 30, -6f)));
     @Override
     public void onInitialize() {
         registryHelper.registerItem(new Item(new Item.Settings().food(ModFoodComponents.BURGER_ITEM)), "burger", "Burger");

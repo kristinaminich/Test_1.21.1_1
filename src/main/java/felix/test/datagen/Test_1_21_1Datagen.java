@@ -9,5 +9,6 @@ public class Test_1_21_1Datagen implements DataGeneratorEntrypoint {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
         pack.addProvider(Test_1_21_1ModelDatagen::new);
         pack.addProvider(Test_1_21_1LangDatagen::new);
+        pack.addProvider(ItemTagDatagen::new);
     }
 }

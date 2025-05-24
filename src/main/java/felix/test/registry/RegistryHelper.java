@@ -14,7 +14,6 @@ import java.util.List;
 public class RegistryHelper {
     public List<BlockRegistryInfo> registeredBlocks = new ArrayList<>();
     public List<ItemRegistryInfo> registeredItems = new ArrayList<>();
-    public List<ItemRegistryInfo> registeredArmorItems = new ArrayList<>();
     public List<BlockItemRegistryInfo> registeredBlockItems = new ArrayList<>();
     public boolean defaultOptionalFlagValue = true;
     public Block registerBlockAndItem(Block block, String id, String name) {
@@ -31,10 +30,6 @@ public class RegistryHelper {
 
     public void registerBlock(Block block, String id, String name) {
         registeredBlocks.add(new BlockRegistryInfo(Registry.register(Registries.BLOCK, Identifier.of(Test.MODID, id), block), name));
-    }
-
-    public void registerArmorItem(Item item, String id, String name){
-        registeredArmorItems.add(new ItemRegistryInfo(Registry.register(Registries.ITEM, Identifier.of(Test.MODID, id), item), name));
     }
 
     public record BlockItemRegistryInfo(Identifier identifier, Block block, Item item, String name) {

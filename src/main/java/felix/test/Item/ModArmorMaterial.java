@@ -19,11 +19,11 @@ public enum ModArmorMaterial {;
     private static Object ModItems;
     public static final RegistryEntry<ArmorMaterial> QUADRATITE_ARMOR_MATERIAL = registerArmorMaterial("quadratite",
             () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                map.put(ArmorItem.Type.BOOTS, 1);
-                map.put(ArmorItem.Type.LEGGINGS, 2);
-                map.put(ArmorItem.Type.CHESTPLATE, 3);
-                map.put(ArmorItem.Type.HELMET, 1);
-                map.put(ArmorItem.Type.BODY, 2);
+                map.put(ArmorItem.Type.BOOTS, 30);
+                map.put(ArmorItem.Type.LEGGINGS, 40);
+                map.put(ArmorItem.Type.CHESTPLATE, 50);
+                map.put(ArmorItem.Type.HELMET, 20);
+                map.put(ArmorItem.Type.BODY, 50);
             }), 50, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(Test.QUADRATITE_INGOT),
                     List.of(new ArmorMaterial.Layer(Identifier.of(Test.MODID, "quadratite"))), 20,20));
 

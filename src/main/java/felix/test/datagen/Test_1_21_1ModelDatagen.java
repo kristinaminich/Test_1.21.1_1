@@ -31,8 +31,5 @@ public class Test_1_21_1ModelDatagen extends FabricModelProvider {
         Test.registryHelper.registeredBlockItems.forEach(bi -> {
             itemModelGenerator.register(bi.item(),Models.GENERATED);
         });
-        Test.registryHelper.registeredArmorItems.forEach(i -> {
-            itemModelGenerator.register(i.item(), Models.GENERATED);
-        });
     }
 }

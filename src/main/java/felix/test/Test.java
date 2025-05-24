@@ -25,7 +25,7 @@ public class Test implements ModInitializer {
     public static final Item RAW_VIBRAIUM_ITEM = new Item(new Item.Settings());
     public static final Item SHIELD = new ShieldItem(new Item.Settings().maxDamage(2500));
     public static final Item QUADRATITE_INGOT = new Item(new Item.Settings());
-    public static final Item QUADRITITE_SWORD = new SwordItem(ModToolMaterial.QUADRATITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterial.QUADRATITE, 30, -6f)));
+    public static final Item QUADRATITE_SWORD = new SwordItem(ModToolMaterial.QUADRATITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterial.QUADRATITE, 29, 300f)));
     public static final Item QUADRATITE_HELMET = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(3)));
     public static final Item QUADRATITE_CHESTPLATE = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(3)));
     public static final Item QUADRATITE_LEGGINS = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(3)));
@@ -38,11 +38,11 @@ public class Test implements ModInitializer {
         registryHelper.registerBlockAndItem(VIBRANIUM_ORE_BLOCK, "vibranium_ore_block", "Vibranium Ore");
         registryHelper.registerItem(RAW_VIBRAIUM_ITEM, "raw_vibranium", "raw vibranium");
         registryHelper.registerItem(SHIELD, "shield", "Shield");
-        registryHelper.registerItem(QUADRITITE_SWORD, "quadratite_sword", "Quadratite Sword");
+        registryHelper.registerItem(QUADRATITE_SWORD, "quadratite_sword", "Quadratite Sword");
         registryHelper.registerItem(QUADRATITE_INGOT, "quadratite_ingot", "Quadratite Ingot");
-        registryHelper.registerArmorItem(QUADRATITE_HELMET, "quadratite_helmet", "Quadratite Helmet");
-        registryHelper.registerArmorItem(QUADRATITE_CHESTPLATE, "quadratite_chestplate", "Quadratite Chestplate");
-        registryHelper.registerArmorItem(QUADRATITE_LEGGINS, "quadratite_leggins", "Quadratite Leggins");
-        registryHelper.registerArmorItem(QUADRATITE_BOOTS, "quadratite_boots", "Quadratite Boots");
+        registryHelper.registerItem(QUADRATITE_HELMET, "quadratite_helmet", "Quadratite Helmet");
+        registryHelper.registerItem(QUADRATITE_CHESTPLATE, "quadratite_chestplate", "Quadratite Chestplate");
+        registryHelper.registerItem(QUADRATITE_LEGGINS, "quadratite_leggins", "Quadratite Leggins");
+        registryHelper.registerItem(QUADRATITE_BOOTS, "quadratite_boots", "Quadratite Boots");
     }
 }

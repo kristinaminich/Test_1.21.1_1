@@ -30,6 +30,7 @@ public class Test implements ModInitializer {
     public static final Item QUADRATITE_CHESTPLATE = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(3)));
     public static final Item QUADRATITE_LEGGINS = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(3)));
     public static final Item QUADRATITE_BOOTS = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(3)));
+    public static final Item HOT_POTATOE = new FireChargeItem(new Item.Settings());
 
 
     @Override
@@ -44,5 +45,6 @@ public class Test implements ModInitializer {
         registryHelper.registerItem(QUADRATITE_CHESTPLATE, "quadratite_chestplate", "Quadratite Chestplate");
         registryHelper.registerItem(QUADRATITE_LEGGINS, "quadratite_leggins", "Quadratite Leggins");
         registryHelper.registerItem(QUADRATITE_BOOTS, "quadratite_boots", "Quadratite Boots");
+        registryHelper.registerItem(HOT_POTATOE, "hot_potatoe", "Hot Potatoe");
     }
 }

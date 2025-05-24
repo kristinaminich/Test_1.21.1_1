@@ -28,10 +28,13 @@ public class ItemTagDatagen extends FabricTagProvider<Item> {
         var head_armor = getOrCreateTagBuilder(ItemTags.HEAD_ARMOR);
         var leg_armor = getOrCreateTagBuilder(ItemTags.LEG_ARMOR);
         var foot_armor = getOrCreateTagBuilder(ItemTags.FOOT_ARMOR);
+        var shields = getOrCreateTagBuilder(ItemTags.DURABILITY_ENCHANTABLE);
+        var pickaxe = getOrCreateTagBuilder(ItemTags.PICKAXES);
         swords.add(Test.QUADRATITE_SWORD);
         chest_armor.add(Test.QUADRATITE_CHESTPLATE);
         head_armor.add(Test.QUADRATITE_HELMET);
         leg_armor.add(Test.QUADRATITE_LEGGINS);
         foot_armor.add(Test.QUADRATITE_BOOTS);
+        shields.add(Test.SHIELD);
     }
 }

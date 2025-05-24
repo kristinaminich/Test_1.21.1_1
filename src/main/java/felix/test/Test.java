@@ -3,7 +3,6 @@ package felix.test;
 import felix.test.Item.ModArmorMaterial;
 import felix.test.Item.ModFoodComponents;
 import felix.test.Item.ModToolMaterial;
-import felix.test.Item.ThrowableItem;
 import felix.test.registry.RegistryHelper;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.AbstractBlock;

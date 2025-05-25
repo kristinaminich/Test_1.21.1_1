@@ -13,7 +13,7 @@ import static net.minecraft.registry.tag.BlockTags.INCORRECT_FOR_NETHERITE_TOOL;
 
 public enum ModToolMaterial implements ToolMaterial {
     QUADRATITE(INCORRECT_FOR_NETHERITE_TOOL,
-            16, 20.0F, 20.0F, 22, () -> Ingredient.ofItems(Test.QUADRATITE_INGOT));
+            16, 50.0F, 20.0F, 22, () -> Ingredient.ofItems(Test.QUADRATITE_INGOT));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

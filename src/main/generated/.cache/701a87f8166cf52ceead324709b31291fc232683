@@ -1,8 +1,8 @@
-// 1.21.1	2025-05-24T16:47:49.775201489	test_1.21.1/Tags for minecraft:item
-fd22b2d6dea01b4671ad9735e00b6812ad152386 data/minecraft/tags/item/head_armor.json
-58d663222e68a0ae78166180c632364abb7e8c8d data/minecraft/tags/item/leg_armor.json
-f1b81ed1afce57fb2a7b1aecb96ce3477bf6a16a data/minecraft/tags/item/enchantable/durability.json
-9ebed65cff3ee42a98145a8a26ee6f9cbc5d2afe data/minecraft/tags/item/foot_armor.json
-ba306848a2d19198f9a7600be2a736d2d4a95d50 data/minecraft/tags/item/chest_armor.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/pickaxes.json
-1bab74846abc0d01d6475b27a20dd6487babd7ff data/minecraft/tags/item/swords.json
+// 1.21.1	2025-05-25T12:29:56.5132029	test_1.21.1/Tags for minecraft:item
+f1b81ed1afce57fb2a7b1aecb96ce3477bf6a16a data\minecraft\tags\item\enchantable\durability.json
+fd22b2d6dea01b4671ad9735e00b6812ad152386 data\minecraft\tags\item\head_armor.json
+58d663222e68a0ae78166180c632364abb7e8c8d data\minecraft\tags\item\leg_armor.json
+ba306848a2d19198f9a7600be2a736d2d4a95d50 data\minecraft\tags\item\chest_armor.json
+1bab74846abc0d01d6475b27a20dd6487babd7ff data\minecraft\tags\item\swords.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\item\pickaxes.json
+9ebed65cff3ee42a98145a8a26ee6f9cbc5d2afe data\minecraft\tags\item\foot_armor.json

@@ -1,5 +1,6 @@
 package felix.test;
 
+import com.terraformersmc.modmenu.util.mod.Mod;
 import felix.test.Item.ModArmorMaterial;
 import felix.test.Item.ModFoodComponents;
 import felix.test.Item.ModToolMaterial;
@@ -21,6 +22,7 @@ public class Test implements ModInitializer {
     public static final Item SHIELD = new ShieldItem(new Settings().maxDamage(2500));
     public static final Item QUADRATITE_INGOT = new Item(new Settings());
     public static final Item QUADRATITE_SWORD = new SwordItem(ModToolMaterial.QUADRATITE, new Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterial.QUADRATITE, 29, 300f)));
+    public static final Item QUADRATITE_PICKAXE = new PickaxeItem(ModToolMaterial.QUADRATITE, new Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterial.QUADRATITE, 0, 6)));
     public static final Item QUADRATITE_HELMET = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(3)));
     public static final Item QUADRATITE_CHESTPLATE = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(3)));
     public static final Item QUADRATITE_LEGGINS = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(3)));
@@ -40,5 +42,6 @@ public class Test implements ModInitializer {
         registryHelper.registerItem(QUADRATITE_LEGGINS, "quadratite_leggins", "Quadratite Leggins");
         registryHelper.registerItem(QUADRATITE_BOOTS, "quadratite_boots", "Quadratite Boots");
         registryHelper.registerItem(HOT_POTATOE, "hot_potatoe", "Hot Potatoe");
+        registryHelper.registerItem(QUADRATITE_PICKAXE, "quadratite_pickaxe", "Quadratite Pickaxe");
     }
 }

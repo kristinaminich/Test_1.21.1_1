@@ -1,35 +1,35 @@
 package felix.test.Item;
 
 import felix.test.Test;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterial;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.item.equipment.ArmorMaterial;
+import net.minecraft.item.equipment.EquipmentAsset;
+import net.minecraft.item.equipment.EquipmentAssetKeys;
+import net.minecraft.item.equipment.EquipmentType;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Util;
 
-import java.util.EnumMap;
-import java.util.List;
-import java.util.function.Supplier;
+import java.util.Map;
 
-public enum ModArmorMaterial {;
-    private static Object ModItems;
-    public static final RegistryEntry<ArmorMaterial> QUADRATITE_ARMOR_MATERIAL = registerArmorMaterial("quadratite",
-            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                map.put(ArmorItem.Type.BOOTS, 30);
-                map.put(ArmorItem.Type.LEGGINGS, 40);
-                map.put(ArmorItem.Type.CHESTPLATE, 50);
-                map.put(ArmorItem.Type.HELMET, 20);
-                map.put(ArmorItem.Type.BODY, 50);
-            }), 50, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(Test.QUADRATITE_INGOT),
-                    List.of(new ArmorMaterial.Layer(Identifier.of(Test.MODID, "quadratite"))), 20,20));
+import static felix.test.Item.ModToolMaterial.QUADRATITE;
 
-
-    public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {
-        return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(Test.MODID, name), material.get());
-    }
+public class ModArmorMaterial {
+    public static final RegistryKey<EquipmentAsset> QUADRATITE_ARMOR_MATERIAL_KEY = RegistryKey.of(EquipmentAssetKeys.REGISTRY_KEY, Identifier.of(Test.MODID, "guidite"));
+    public static final int BASE_DURABILITY = 15;
+    public static final ArmorMaterial QUADRATITE_ARMOR_MATERIAL = new ArmorMaterial(
+            BASE_DURABILITY,
+            Map.of(
+                    EquipmentType.HELMET, 3,
+                    EquipmentType.CHESTPLATE, 8,
+                    EquipmentType.LEGGINGS, 6,
+                    EquipmentType.BOOTS, 3
+            ),
+            5,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER,
+            0.0F,
+            0.0F,
+            QUADRATITE.repairItems(),
+            QUADRATITE_ARMOR_MATERIAL_KEY
+    );
 }
 

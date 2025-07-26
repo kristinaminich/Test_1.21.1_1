@@ -19,7 +19,6 @@ public class Test implements ModInitializer {
     public static final String MODID = "test";
     public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
     public static RegistryHelper registryHelper = new RegistryHelper();
-    public static final Block VIBRANIUM_ORE_BLOCK = new Block(AbstractBlock.Settings.create());
     public static final Item RAW_VIBRAIUM_ITEM = new Item(new Settings());
     public static final Item SHIELD = new ShieldItem(new Settings().maxDamage(2500));
     public static final Item QUADRATITE_INGOT = new Item(new Settings());
@@ -30,12 +29,11 @@ public class Test implements ModInitializer {
     public static final Item QUADRATITE_LEGGINS = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, EquipmentType.LEGGINGS, new Settings());
     public static final Item QUADRATITE_BOOTS = new ArmorItem(ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL, EquipmentType.BOOTS, new Settings());
     public static final Item HOT_POTATOE = new SnowballItem(new Settings());
-    public static final Item BURGER_ITEM = new Item (new Settings().food(BURGER_FOOD_COMPONENT, BURGER_CONSUMABLE_COMPONENT));
 
     @Override
     public void onInitialize() {
-        registryHelper.registerItem(BURGER_ITEM, "burger", "Burger");
-        registryHelper.registerBlockAndItem(VIBRANIUM_ORE_BLOCK, "vibranium_ore_block", "Vibranium Ore");
+        registryHelper.registerItem(Item::new, new Settings().food(BURGER_FOOD_COMPONENT, BURGER_CONSUMABLE_COMPONENT), "burger", "Burger");
+        registryHelper.registerBlockAndItem(Item::new, new Block(AbstractBlock.Settings.create()), "vibranium_ore_block", "Vibranium Ore");
         registryHelper.registerItem(RAW_VIBRAIUM_ITEM, "raw_vibranium", "raw vibranium");
         registryHelper.registerItem(SHIELD, "shield", "Shield");
         registryHelper.registerItem(QUADRATITE_SWORD, "quadratite_sword", "Quadratite Sword");

@@ -14,5 +14,5 @@ import static net.minecraft.registry.tag.BlockTags.INCORRECT_FOR_NETHERITE_TOOL;
 
 public class ModToolMaterial {
     public static final ToolMaterial QUADRATITE = new ToolMaterial(
-            BlockTags.INCORRECT_FOR_WOODEN_TOOL, 455,5.0F,1.5F,22, ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL);
+            BlockTags.INCORRECT_FOR_WOODEN_TOOL, 455,5.0F,1.5F,22, ModArmorMaterial.QUADRATITE_ARMOR_MATERIAL.repairIngredient());
 }

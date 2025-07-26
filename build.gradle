@@ -106,7 +106,9 @@ publishing {
         // retrieving dependencies.
     }
     fabricApi {
-        configureDataGeneration()
+        configureDataGeneration{
+            client = true
+        }
     }
 
 }
